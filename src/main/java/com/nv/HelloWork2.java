@@ -9,7 +9,7 @@ public class HelloWork2 {
     public static void main(final String[] args) {
         App app = new App();
 
-        new HelloCdk3Stack(app, "HelloCdk3Stack", StackProps.builder()
+        new HelloCdk3Stack(app, "stackname02", StackProps.builder()
                 // If you don't specify 'env', this stack will be environment-agnostic.
                 // Account/Region-dependent features and context lookups will not work,
                 // but a single synthesized template can be deployed anywhere.
