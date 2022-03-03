@@ -1,12 +1,9 @@
 package com.nv;
 
-import software.amazon.awscdk.App;
-import software.amazon.awscdk.Environment;
-import software.amazon.awscdk.StackProps;
-
-import java.util.Arrays;
-
 import com.myorg.HelloCdk3Stack;
+
+import software.amazon.awscdk.App;
+import software.amazon.awscdk.StackProps;
 
 public class HelloWork1 {
     public static void main(final String[] args) {
@@ -23,15 +20,6 @@ public class HelloWork1 {
                 .env(Environment.builder()
                         .account(System.getenv("CDK_DEFAULT_ACCOUNT"))
                         .region(System.getenv("CDK_DEFAULT_REGION"))
-                        .build())
-                */
-
-                // Uncomment the next block if you know exactly what Account and Region you
-                // want to deploy the stack to.
-                /*
-                .env(Environment.builder()
-                        .account("123456789012")
-                        .region("us-east-1")
                         .build())
                 */
 
